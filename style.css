@@ -37,7 +37,13 @@ body, a {
 a:hover {
 	color: #999;
 }
-#container {
+h1, h2, h3, p {
+	line-height: 1.5;
+}
+h3 {
+	font-style: italic;
+}
+#links {
 	position: absolute;
 	top: 13px;
 	left: 624px;
