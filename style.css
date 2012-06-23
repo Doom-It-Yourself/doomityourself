@@ -9,7 +9,7 @@
 	vertical-align: baseline;
 }
 body {
-	line-height: 1;
+	line-height: 1.5;
 }
 ol, ul {
 	list-style: none;
@@ -26,7 +26,9 @@ blockquote, q {
 /* content */
 body {
 	background: #eee;
+	font-family: 'IM Fell English', serif;
 	font-variant: small-caps;
+	font-size: 16px;
 }
 body, a {
 	color: #0f0f0f;
