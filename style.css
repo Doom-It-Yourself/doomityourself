@@ -24,4 +24,19 @@ blockquote, q {
 	display: none;
 }
 /* content */
-body {}
+body {
+	background: #eee;
+	font-variant: small-caps;
+}
+body, a {
+	color: #0f0f0f;
+	text-decoration: none;
+}
+a:hover {
+	color: #999;
+}
+#container {
+	position: absolute;
+	top: 50px;
+	right: 150px;
+}
