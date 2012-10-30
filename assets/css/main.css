@@ -410,6 +410,7 @@ nav a {
 
 div div {
 	margin: 0 66px 0 243px;
+	min-height: 666px;
 }
 
 footer {
@@ -423,6 +424,15 @@ footer {
 q a {
 	padding-left: 13px;
 }
+
+h5 + p {
+	margin: -23px 0 0;
+}
+
+.social-icons img {
+    width: 23px;
+    height: 23px;
+  }
 
 /* Media queries
 ---------------------------------------- */

@@ -6,6 +6,8 @@ RESOURCES
 
 - [Gridless](http://thatcoolguy.github.com/gridless-boilerplate/)
 
+- [iconmonstr](http://iconmonstr.com/)
+
 FILES
 -----
 
