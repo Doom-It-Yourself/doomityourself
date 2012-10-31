@@ -425,14 +425,18 @@ q a {
 	padding-left: 13px;
 }
 
-.social-icons {
+.anti-social {
 	margin: -23px 0 0;
 }
 
-.social-icons img {
+.anti-social img {
     width: 23px;
     height: 23px;
   }
+
+.anti {
+	margin: 0;
+}
 
 /* Media queries
 ---------------------------------------- */
