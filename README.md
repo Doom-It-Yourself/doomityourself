@@ -11,7 +11,7 @@ RESOURCES
 FILES
 -----
 
-- **README.md**: the file you're reading right now
+- **README.md**: The file you're reading right now
 
 - **index.html**: The HTML(5) page with a logo and enter-link
 
@@ -24,6 +24,8 @@ FILES
 - **contact.html**: The HTML(5) page with all contact information
 
 - **favicon.ico**: The favicons (bookmark icons)
+
+- **keyword.lst**: A list with keywords to use in text
 
 - **assets/** *(folder)*: The folder that includes all the assets
 
