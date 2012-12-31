@@ -58,7 +58,7 @@ body {
 /* Fonts settings based on the 100E2R standard: http://www.informationarchitects.jp/en/100e2r/ */
 body, button, input, select, textarea {
 	font: 1em/1.625 'IM Fell English', serif;
-	color: #000; /* Full black on white is too much contrast, #222 is a better default */
+	color: #222; /* Full black on white is too much contrast, #222 is a better default */
 }
 
 /* Add and/or remove tags as your baseline grid needs */
@@ -314,7 +314,7 @@ hr {
 	display: block;
 	height: 1px;
 	border: 0;
-	border-bottom: 1px solid #222;
+	border-bottom: 1px solid #a4a4a4;
 }
 
 strong, b, dt {
@@ -363,6 +363,24 @@ sub {
 
 .group {
 	*zoom: 1;
+	margin: 0 auto;
+}
+
+.section {
+	float: left;
+	width: 30%;
+	height: auto;
+	margin: 0 10px;
+	padding: 0 .5em;
+}
+
+.big {
+	width: 60%;
+	padding: 0 13px 0 31px;
+}
+
+.lill {
+	width: auto;
 }
 
 /* Primary styles
@@ -386,6 +404,7 @@ header {
 	background: #000;
 	color: #ddd;
 	text-align: center;
+	height: 80px;
 }
 
 nav {
@@ -408,14 +427,15 @@ nav a {
 	padding: 0 34px;
 }
 
-div div {
+div .small {
 	margin: 0 66px 0 243px;
 	min-height: 666px;
 }
 
 footer {
-	float: right;
-	text-align: right;
+	float: none;
+	margin: auto;
+	text-align: center;
 	font-size: smaller;
 	margin: 13px 66px;
 	text-transform: capitalize;
@@ -436,6 +456,44 @@ q a {
 
 .anti {
 	margin: 0;
+}
+
+.ribbon-set {
+	position: absolute;
+	top: 0;
+	overflow: hidden;
+	height: 10em;
+	right: 0; /* left: 0; for upperleftcorner */
+}
+
+.ribbon, .ribbon:hover {
+	text-decoration: none;
+	border-bottom: none;
+}
+
+.ribbon {
+	letter-spacing: -.1px;
+	opacity: 0.95;
+	padding: 0.25em 0;
+	position: relative;
+	top: 2.5em;
+	display: block;
+	line-height: 1.35em;
+	-moz-transform: rotate(45deg); /* upperleftcorner: -45deg */
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	right: -2.6em; /* left: -2.6em; for upperleftcorner */
+	background-color: #6d6d6d;
+	
+}
+
+.ribbon .text {
+	padding: 0.1em 3em;
+	border: 1px solid #a4a4a4;
+}
+
+.gryz {
+	color: #a4a4a4;
 }
 
 /* Media queries
@@ -507,4 +565,92 @@ q a {
 	h2, h3 {
 		page-break-after: avoid;
 	}
+	/* Do not show the "github-ribbon" */
+	.ribbon {
+		display: none;
+	}
+}
+
+/* MailChimp Form Embed Code
+---------------------------------------- */
+
+#mc_embed_signup input {
+	border:1px solid #999;
+}
+#mc_embed_signup input:focus {
+	border-color:#333;
+}
+#mc_embed_signup .button {
+	background-color: #aaa;
+	border: 0 none;
+	color: #fff;
+}
+#mc_embed_signup .button:hover {
+	background-color:#777;
+}
+#mc_embed_signup .nowrap {
+	white-space:nowrap;
+}     
+#mc_embed_signup .clear {
+	clear:none;
+	display:inline;
+}
+#mc_embed_signup input.email {
+	text-indent:5px;
+	width:58%;
+	min-width:130px;
+}
+#mc_embed_signup input.button {
+	display:block;
+	width:35%;
+	min-width:90px;
+}
+
+#mc_embed_signup div#mce-responses {
+	float:left;
+	top:-1.4em;
+	padding:0em .5em 0em .5em;
+	overflow:hidden;
+	width:90%;
+	margin: 0 5%;
+	clear: both;
+}
+#mc_embed_signup div.response {
+	margin:1em 0;
+	padding:1em .5em .5em 0;
+	font-weight:bold;
+	float:left;
+	top:-1.5em;
+	z-index:1;
+	width:80%;
+}
+#mc_embed_signup #mce-error-response {
+	display:none;
+}
+#mc_embed_signup #mce-success-response {
+	color:#529214;
+	display:none;
+}
+#mc_embed_signup label {
+	display:block;
+	margin-left: -.5em;
+}
+#mc_embed_signup label.error {
+	display:block;
+	float:none;
+	width:auto;
+	margin-left:1.05em;
+	text-align:left;
+	padding:.5em 0;
+}
+#mc_embed_signup {
+	width: 350px;
+	margin-left: .5em;
+}
+
+/* Leaflet OSM Embed Code
+---------------------------------------- */
+
+#map {
+	height: 180px;
 }

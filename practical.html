@@ -4,12 +4,16 @@
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-		<title>Practical || Doom-It-Yourself</title>
+		<title>Doom-It-Yourself</title>
 		<meta name="description" content="Doom-It-Yourself is a platform for anti-commercial culture" />
 		<meta name="author" content="WisdomLost" />
 
 		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
 		<link rel="stylesheet" href="assets/css/main.css?version=1" />
+		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4/leaflet.css" />
+		<!--[if lte IE 8]>
+		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.4/leaflet.ie.css" />
+		<![endif]-->
 		<link href="http://fonts.googleapis.com/css?family=IM+Fell+English:400,400italic" rel="stylesheet" type="text/css">
 
 		<!-- JavaScript -->
@@ -18,41 +22,45 @@
 		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		<script src="assets/js/respond.min.js"></script>
+		<script src="http://cdn.leafletjs.com/leaflet-0.4/leaflet.js"></script>
+		<script src="assets/js/map.js"></script>
 	</head>
 
 	<body>
 		<div>
 			<header>
-				<h1>opium for the cynical masses</h1>
+				<img src="http://dl.doomityourself.org/assets/img/logo.png" alt="logo" class="float-left">
+				<h1>&#8220;opium for the cynical masses&#8221;</h1>
 			</header>
+
 			<nav>
 				<p>
-					<a href="news.html">News</a>
+					<a href="home.html">&#9660; Home</a>
 				</p>
 				<p>
-					<a href="background.html">Background</a>
+					<a href="background.html">&#9650; Background</a>
 				</p>
 				<p>
-					<a href="practical.html">Practical</a>
+					<a href="practical.html">&#9664; Practical</a>
 				</p>
 				<p>
-					<a href="contact.html">Contact</a>
+					<a href="contact.html">&#9654; Contact</a>
 				</p>
 			</nav>
 
-			<img src="assets/img/zwartschaap-ico.png" alt="zwart schaap" class="float-left">
+			<img src="http://dl.doomityourself.org/assets/img/zwartschaap-ico.png" alt="zwart schaap" class="float-left">
 
-			<div>
-				<h3>Practical information</h3>
-				<h5># anti-social networking</h5>
+			<div class="small">
+				<h3 class="gryz">&#9664; Practical information</h3>
+				<h5># networking</h5>
 				<p class="anti-social">
-					<a href="https://www.facebook.com/doomityourself" target="_blank"><img src="assets/img/facebook.png" alt="facebook"></a>
-					<a href="https://twitter.com/DoomItYourself" target="_blank"><img src="assets/img/twitter.png" alt="twitter"></a>
-					<a href="http://www.last.fm/user/doomityourself" target="_blank"><img src="assets/img/lastfm.png" alt="last.fm"></a>
-					<a href="https://vimeo.com/doomityourself" target="_blank"><img src="assets/img/vimeo.png" alt="vimeo"></a>
-					<a href="http://soundcloud.com/doomityourself" target="_blank"><img src="assets/img/soundcloud.png" alt="soundcloud"></a>
-					<a href="http://www.flickr.com/photos/doomityourself" target="_blank"><img src="assets/img/flickr.png" alt="flickr"></a>
-					<a href="https://github.com/Doom-It-Yourself" target="_blank"><img src="assets/img/github.png" alt="github"></a>
+					<a href="https://www.facebook.com/doomityourself" target="_blank"> <img src="http://dl.doomityourself.org/assets/img/facebook.png" alt="facebook"></a>
+					<a href="https://twitter.com/DoomItYourself" target="_blank"> <img src="http://dl.doomityourself.org/assets/img/twitter.png" alt="twitter"></a>
+					<a href="http://www.last.fm/user/doomityourself" target="_blank"> <img src="http://dl.doomityourself.org/assets/img/lastfm.png" alt="last.fm"></a>
+					<a href="https://vimeo.com/doomityourself" target="_blank"> <img src="http://dl.doomityourself.org/assets/img/vimeo.png" alt="vimeo"></a>
+					<a href="http://soundcloud.com/doomityourself" target="_blank"> <img src="http://dl.doomityourself.org/assets/img/soundcloud.png" alt="soundcloud"></a>
+					<a href="http://www.flickr.com/photos/doomityourself" target="_blank"> <img src="http://dl.doomityourself.org/assets/img/flickr.png" alt="flickr"></a>
+					<a href="https://github.com/Doom-It-Yourself" target="_blank"> <img src="http://dl.doomityourself.org/assets/img/github.png" alt="github"></a>
 				</p>
 				<h5 class="anti"># food</h5>
 				<p>
@@ -61,14 +69,32 @@
 				<h5 class="anti"># accommodation</h5>
 				<p>
 					Unfortunality we don't have a city that looks like the beach of Normandy after D-Day
-					so join <a href="http://www.couchsurfing.org/" target="_blank">this site</a>
+					so join <a href="http://www.couchsurfing.org/" target="_blank">here</a> or <a href="http://www.bewelcome.org/" target="_blank">there</a>
 					and find yourself a couch!
 				</p>
-				<!--<h5 class="anti"># venues</h5>
+				<h5 class="anti"># venues</h5>
 				<p>
-				<a href="http://izzymaze.com/">Izzy Maze</a> - Leopoldplaats 2 - 2000 A'PEN
+					&#9654; <a href="http://izzymaze.com/" target="_blank">Izzy Maze</a> - Leopoldplaats 2 - 2000 A'pen
+					<br />
+					&#9654; <a href="http://kavka.be/" target="_blank">Kavka</a> - Oudaan 14 - 2000 A'pen
+					<br />
+					&#9654; <a href="http://scheldapen.be/" target="_blank">Scheld'apen</a> - d'Herbouvillekaai 36 - 2020 A'pen
+					<br />
+					&#9654; <a href="http://facebook.com/antwerpmusiccity" target="_blank">Music City</a> - Handelsstraat 29 - 2060 A'pen
+					<br />
+					&#9654; <a href="http://facebook.com/groups/audioplant" target="_blank">Audio Plant</a> - Essenlaan 12 - 2050 A'pen
+					<br />
+					&#9654; <a href="http://facebook.com/stadslimiet" target="_blank">Stadslimiet</a> - Ernest van Dijckkaai 4 - 2000 A'pen
+					<br />
+					&#9654; <a href="http://facebook.com/groups/218184651599466" target="_blank">Bar a bateau</a> - Madrasstraat - 2030 A'pen
+					<br />
+					&#9654; <a href="http://klappei.be/" target="_blank">Filmhuis Klappei</a> - Klappeistraat 2 - 2060 A'pen
+					<br />
+					&#9654; <a href="http://trixonline.be/" target="_blank">Trix</a> - Noordersingel 28-30 - 2140 A'pen
+					<br />
+					<div id="map"></div>
 				</p>
-				<h5 class="anti"># partners</h5>
+				<!--<h5 class="anti"># partners</h5>
 				<p>
 
 				</p>-->
@@ -85,11 +111,38 @@
 
 			<footer>
 				<p>
-					&#390;&#8413; Copyleft  by <a href="mailto:admin@doomityourself.org?subject=feedback">doom-it-yourself</a>
+					unless otherwise noted, &#390;&#8413;  copyleft  by <a href="mailto:admin@doomityourself.org?subject=feedback">doom-it-yourself</a>
 					<br>
 					released under the <a href="http://sam.zoy.org/wtfpl/COPYING" target="_blank">Do What The Fuck You Want To Public License</a>
 				</p>
 			</footer>
 		</div>
+		<script type='text/javascript'>
+			timer = setTimeout('startMap()', 500);
+
+			var myflowers = new ddtabcontent("flowertabs");
+			myflowers.setpersist(false);
+			myflowers.setselectedClassTarget("link");
+			myflowers.init();
+			/* Wonderful tab script from www.dynamicdrive.com */
+
+			var fo = new SWFObject("counties.swf?d=1", "counties", "100%", "100%", "6", "#FFFFFF");
+			fo.write("flashmap");
+			var timer;
+			var mapinited = false;
+
+			document.getElementById("maplink").onmouseup = function() {
+				timer = setTimeout("startMap()", 500);
+			};
+
+			function startMap() {
+				if (mapinited) {
+					return;
+				}
+				mapinited = true;
+				clearTimeout(timer);
+				initmap();
+			}
+		</script>
 	</body>
 </html>
