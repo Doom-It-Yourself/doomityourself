@@ -18,7 +18,7 @@
 		var osmAttrib='&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
 		var osm = new L.TileLayer(osmUrl, {minZoom: 8, maxZoom: 12, attribution: osmAttrib});		
 
-		map.setView(new L.LatLng(51.3, 0.7),9);
+		map.setView(new L.LatLng(51.2, 4.4),9);
 		map.attributionControl.setPrefix('');
 		map.addLayer(osm);
 		askForPlots();

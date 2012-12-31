@@ -26,10 +26,9 @@
 		<script src="assets/js/map.js"></script>
 	</head>
 
-	<body>
+	<body onload="initmap();">
 		<div>
 			<header>
-				<img src="http://dl.doomityourself.org/assets/img/logo.png" alt="logo" class="float-left">
 				<h1>&#8220;opium for the cynical masses&#8221;</h1>
 			</header>
 
@@ -117,32 +116,5 @@
 				</p>
 			</footer>
 		</div>
-		<script type='text/javascript'>
-			timer = setTimeout('startMap()', 500);
-
-			var myflowers = new ddtabcontent("flowertabs");
-			myflowers.setpersist(false);
-			myflowers.setselectedClassTarget("link");
-			myflowers.init();
-			/* Wonderful tab script from www.dynamicdrive.com */
-
-			var fo = new SWFObject("counties.swf?d=1", "counties", "100%", "100%", "6", "#FFFFFF");
-			fo.write("flashmap");
-			var timer;
-			var mapinited = false;
-
-			document.getElementById("maplink").onmouseup = function() {
-				timer = setTimeout("startMap()", 500);
-			};
-
-			function startMap() {
-				if (mapinited) {
-					return;
-				}
-				mapinited = true;
-				clearTimeout(timer);
-				initmap();
-			}
-		</script>
 	</body>
 </html>
