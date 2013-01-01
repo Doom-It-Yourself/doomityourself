@@ -441,6 +441,10 @@ footer {
 	text-transform: capitalize;
 }
 
+footer, footer a {
+	color: #6d6d6d;
+}
+
 q a {
 	padding-left: 13px;
 }
@@ -494,6 +498,10 @@ q a {
 
 .gryz {
 	color: #a4a4a4;
+}
+
+.un {
+	margin: 0 13px 0 31px;
 }
 
 /* Media queries
