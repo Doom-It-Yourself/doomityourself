@@ -15,13 +15,15 @@ FILES
 
 - **index.html**: The HTML(5) page with a logo and enter-link
 
-- **news.html**: The HTML(5) page with something useless like a blog
+- **home.html**: The HTML(5) page with something useless like a blog
 
 - **background.html**: The HTML(5) page with some history
 
 - **practical.html**: The HTML(5) page with practical information like venues and partners
 
 - **contact.html**: The HTML(5) page with all contact information
+
+- **portal.html**: The HTML(5) page with a website directory
 
 - **favicon.ico**: The favicons (bookmark icons)
 
@@ -37,7 +39,7 @@ FILES
 
 	- **fonts/** *(folder)*: The folder for the webfonts
 
-	- **img/** *(folder)*: The folder for images
+	- **img/** *(folder)*: The folder for image sources (see readme for images)
 
 	- **js/** *(folder)*: The folder that includes all the JavaScript files
 
