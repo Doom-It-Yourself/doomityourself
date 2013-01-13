@@ -50,10 +50,10 @@
 
 			<div class="group square">
 				<h3 class="gryz">&#9664; Practical information</h3>
-				<div class="section">
+				<div class="halfbaked section">
 					<h5 class="anti"># Food</h5>
 					<p>
-						We try to provide delicious, varied and cheap vegan food at every event.
+						We try to provide delicious, varied and cheap vegan food at most events.
 					</p>
 					<h5 class="anti"># Accommodation</h5>
 					<p>
@@ -61,8 +61,6 @@
 						so join <a href="http://www.couchsurfing.org/" target="_blank">here</a> or <a href="http://www.bewelcome.org/" target="_blank">there</a>
 						and find yourself a couch!
 					</p>
-				</div>
-				<div class="section">
 					<h5 class="anti"># Conduct</h5>
 					<p>
 						We encourage everyone to respect the venues and the area around them and open-mindedness towards eachother.
@@ -73,43 +71,79 @@
 						or doubts feel free to ask any working volunteer.
 					</p>
 				</div>
-				<h5 class="anti"># Interesting venues</h5>
-				<p>
-					&#9654; <a href="http://izzymaze.com/" target="_blank">Izzy Maze</a> - Leopoldplaats 2 - B-2000 A'pen
-					<br />
-					&#9654; <a href="http://kavka.be/" target="_blank">Kavka</a> - Oudaan 14 - B-2000 A'pen
-					<br />
-					&#9654; <a href="http://scheldapen.be/" target="_blank">Scheld'apen</a> - d'Herbouvillekaai 36 - B-2020 A'pen
-					<br />
-					&#9654; <a href="http://facebook.com/antwerpmusiccity" target="_blank">Music City</a> - Handelsstraat 29 - B-2060 A'pen
-					<br />
-					&#9654; <a href="http://facebook.com/groups/audioplant" target="_blank">AudioPlant</a> - Essenlaan 12 - B-2050 A'pen
-					<br />
-					&#9654; <a href="http://facebook.com/stadslimiet" target="_blank">Stadslimiet</a> - Ernest van Dijckkaai 4 - B-2000 A'pen
-					<br />
-					&#9654; <a href="http://facebook.com/groups/218184651599466" target="_blank">Bar a bateau</a> - Madrasstraat - B-2030 A'pen
-					<br />
-					&#9654; <a href="http://klappei.be/" target="_blank">Filmhuis Klappei</a> - Klappeistraat 2 - B-2060 A'pen
-					<br />
-					&#9654; <a href="http://trixonline.be/" target="_blank">Trix</a> - Noordersingel 28-30 - B-2140 A'pen
-					<br />
-					&#9654; <a href="http://magasin4.be/" target="_blank">Magasin4</a> - Avenue du port 51B - B-1000 Bxl
-					<br />
-					&#9654; <a href="http://lesateliersclaus.com/" target="_blank">Les Ateliers Claus</a> - Brabantstraat 23a - B-1210 Bxl
-					<br />
-					&#9654; <a href="http://kinkystar.be/" target="_blank">Kinky Star</a> - Vlasmarkt 9 - B-9000 Gent
-					<br />
-					<script src="http://cdn.leafletjs.com/leaflet-0.4/leaflet.js"></script>
-					<script src="assets/js/geojson.js"></script>
-					<script src="assets/js/map.js"></script>
-					<div id="map"></div>
-				</p>
-				<!--<div class="section">
-				<h5 class="anti"># Partners</h5>
-				<p>
+				<div class="halfbaked section">
+					<h5 class="anti"># Interesting venues</h5>
+					<p>
+						&#9654; <a href="http://izzymaze.com/" target="_blank">Izzy Maze</a> - Leopoldplaats 2 - B-2000 A'pen
+						<br />
+						&#9654; <a href="http://kavka.be/" target="_blank">Kavka</a> - Oudaan 14 - B-2000 A'pen
+						<br />
+						&#9654; <a href="http://scheldapen.be/" target="_blank">Scheld'apen</a> - d'Herbouvillekaai 36 - B-2020 A'pen
+						<br />
+						&#9654; <a href="http://facebook.com/antwerpmusiccity" target="_blank">Music City</a> - Handelsstraat 29 - B-2060 A'pen
+						<br />
+						&#9654; <a href="http://facebook.com/groups/audioplant" target="_blank">AudioPlant</a> - Essenlaan 12 - B-2050 A'pen
+						<br />
+						&#9654; <a href="http://facebook.com/stadslimiet" target="_blank">Stadslimiet</a> - Ernest van Dijckkaai 4 - B-2000 A'pen
+						<br />
+						&#9654; <a href="http://facebook.com/groups/218184651599466" target="_blank">Bar a bateau</a> - Madrasstraat - B-2030 A'pen
+						<br />
+						&#9654; <a href="http://klappei.be/" target="_blank">Filmhuis Klappei</a> - Klappeistraat 2 - B-2060 A'pen
+						<br />
+						&#9654; <a href="http://trixonline.be/" target="_blank">Trix</a> - Noordersingel 28-30 - B-2140 A'pen
+						<br />
+						&#9654; <a href="http://deneglantier.be/" target="_blank">Den Eglantier</a> - Zillebekelaan 6A - B-2600 Berchem
+						<br />
+						&#9654; <a href="http://magasin4.be/" target="_blank">Magasin4</a> - Avenue du port 51B - B-1000 Bxl
+						<br />
+						&#9654; <a href="http://lesateliersclaus.com/" target="_blank">Les Ateliers Claus</a> - Brabantstraat 23a - B-1210 Bxl
+						<br />
+						&#9654; <a href="http://kinkystar.be/" target="_blank">Kinky Star</a> - Vlasmarkt 9 - B-9000 Gent
+						<br />
+					</p>
+				</div>
+				<div id="map"></div>
+				<script src="http://cdn.leafletjs.com/leaflet-0.4/leaflet.js"></script>
+				<script src="assets/js/geojson.js"></script>
+				<script>
+					var map = L.map('map').setView([51.217691, 4.421482], 12);
 
-				</p>
-				</div>-->
+					L.tileLayer('http://{s}.tile.cloudmade.com/{key}/22677/256/{z}/{x}/{y}.png', {
+						attribution : 'Map data &copy; 2011 OpenStreetMap contributors, Imagery &copy; 2012 CloudMade',
+						key : 'ad1ff949061749b2afe6cc8927df480b'
+					}).addTo(map);
+
+					function onEachFeature(feature, layer) {
+						var popupContent = "&#9873; ";
+
+						if (feature.properties && feature.properties.popupContent) {
+							popupContent += feature.properties.popupContent;
+						}
+
+						layer.bindPopup(popupContent);
+					}
+
+
+					L.geoJson([venues], {
+
+						style : function(feature) {
+							return feature.properties && feature.properties.style;
+						},
+
+						onEachFeature : onEachFeature,
+
+						pointToLayer : function(feature, latlng) {
+							return L.circleMarker(latlng, {
+								radius : 8,
+								fillColor : "#222",
+								color : "#8b0000",
+								weight : 1,
+								opacity : 1,
+								fillOpacity : 0.8
+							});
+						}
+					}).addTo(map);
+				</script>
 			</div>
 
 			<footer>

@@ -369,6 +369,7 @@ sub {
 /*
 	* Micro clearfix hack, more semantically titled with 'group'
 	* Source: nicolasgallagher.com/micro-clearfix-hack/
+	* Column %: matthewjamestaylor.com
 */
 .group:before, .group:after {
 	content: " ";
@@ -394,11 +395,15 @@ sub {
 }
 
 .chubby {
-	width: 71%;			/* left column content width (left column width minus left and right padding) */
+	width: 71%;
 }
 
 .sidekick {
-	width:21%;			/* right column content width (right column width minus left and right padding) */
+	width: 21%;
+}
+
+.halfbaked {
+	width: 46%;
 }
 
 /* Primary styles
@@ -703,5 +708,7 @@ footer, footer a, footer a:visited {
 ---------------------------------------- */
 
 #map {
-	height: 11.250em;
+	height: 22.5em;
+	width: 100%;
+	margin-bottom: .7em;
 }

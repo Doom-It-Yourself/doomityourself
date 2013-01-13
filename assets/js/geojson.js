@@ -1,12 +1,9 @@
-/**
- * @author kasper
- */
 var venues = {
 	"type" : "FeatureCollection",
 	"features" : [{
 		"geometry" : {
 			"type" : "Point",
-			"coordinates" : [51.212635, 4.406832]
+			"coordinates" : [4.406832, 51.212635]
 		},
 		"type" : "Feature",
 		"properties" : {
@@ -16,7 +13,7 @@ var venues = {
 	}, {
 		"geometry" : {
 			"type" : "Point",
-			"coordinates" : [51.215695, 4.403082]
+			"coordinates" : [4.403082, 51.215695]
 		},
 		"type" : "Feature",
 		"properties" : {
@@ -26,7 +23,7 @@ var venues = {
 	}, {
 		"geometry" : {
 			"type" : "Point",
-			"coordinates" : [51.201233, 4.368728]
+			"coordinates" : [4.368728, 51.201233]
 		},
 		"type" : "Feature",
 		"properties" : {
@@ -36,7 +33,7 @@ var venues = {
 	}, {
 		"geometry" : {
 			"type" : "Point",
-			"coordinates" : [51.223503, 4.428467]
+			"coordinates" : [4.428467, 51.223503]
 		},
 		"type" : "Feature",
 		"properties" : {
@@ -46,17 +43,17 @@ var venues = {
 	}, {
 		"geometry" : {
 			"type" : "Point",
-			"coordinates" : [51.234488, 4.383912]
+			"coordinates" : [4.383912, 51.234488]
 		},
 		"type" : "Feature",
 		"properties" : {
-			"popupContent" : "Audio Plant"
+			"popupContent" : "AudioPlant"
 		},
 		"id" : 05
 	}, {
 		"geometry" : {
 			"type" : "Point",
-			"coordinates" : [51.221971, 4.397743]
+			"coordinates" : [4.397743, 51.221971]
 		},
 		"type" : "Feature",
 		"properties" : {
@@ -66,7 +63,7 @@ var venues = {
 	}, {
 		"geometry" : {
 			"type" : "Point",
-			"coordinates" : [51.236345, 4.412191]
+			"coordinates" : [4.412191, 51.236345]
 		},
 		"type" : "Feature",
 		"properties" : {
@@ -76,7 +73,7 @@ var venues = {
 	}, {
 		"geometry" : {
 			"type" : "Point",
-			"coordinates" : [51.221208, 4.429074]
+			"coordinates" : [4.429074, 51.221208]
 		},
 		"type" : "Feature",
 		"properties" : {
@@ -86,12 +83,52 @@ var venues = {
 	}, {
 		"geometry" : {
 			"type" : "Point",
-			"coordinates" : [51.219413, 4.448444]
+			"coordinates" : [4.444034, 51.195006]
+		},
+		"type" : "Feature",
+		"properties" : {
+			"popupContent" : "Den Eglantier"
+		},
+		"id" : 09
+	}, {
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [4.349809, 50.86399]
+		},
+		"type" : "Feature",
+		"properties" : {
+			"popupContent" : "Magasin4"
+		},
+		"id" : 10
+	}, {
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [4.36018, 50.857062]
+		},
+		"type" : "Feature",
+		"properties" : {
+			"popupContent" : "Les Ateliers Claus"
+		},
+		"id" : 11
+	}, {
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [3.728541, 51.055789]
+		},
+		"type" : "Feature",
+		"properties" : {
+			"popupContent" : "Kinky Star"
+		},
+		"id" : 12
+	}, {
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [4.448444, 51.219413]
 		},
 		"type" : "Feature",
 		"properties" : {
 			"popupContent" : "Trix"
 		},
-		"id" : 09
+		"id" : 13
 	}]
-}; 
+};
