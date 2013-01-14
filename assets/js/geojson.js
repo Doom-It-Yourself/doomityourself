@@ -129,7 +129,7 @@ var venues = {
 		"properties" : {
 			"popupContent" : "NEST"
 		},
-		"id" : 12
+		"id" : 13
 	}, {
 		"geometry" : {
 			"type" : "Point",
@@ -139,6 +139,6 @@ var venues = {
 		"properties" : {
 			"popupContent" : "Trix"
 		},
-		"id" : 13
+		"id" : 14
 	}]
 };
