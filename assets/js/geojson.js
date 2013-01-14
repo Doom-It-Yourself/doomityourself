@@ -123,6 +123,16 @@ var venues = {
 	}, {
 		"geometry" : {
 			"type" : "Point",
+			"coordinates" : [3.725975, 51.054671]
+		},
+		"type" : "Feature",
+		"properties" : {
+			"popupContent" : "NEST"
+		},
+		"id" : 12
+	}, {
+		"geometry" : {
+			"type" : "Point",
 			"coordinates" : [4.448444, 51.219413]
 		},
 		"type" : "Feature",
