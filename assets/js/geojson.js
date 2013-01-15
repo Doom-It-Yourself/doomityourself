@@ -83,13 +83,23 @@ var venues = {
 	}, {
 		"geometry" : {
 			"type" : "Point",
+			"coordinates" : [4.448444, 51.219413]
+		},
+		"type" : "Feature",
+		"properties" : {
+			"popupContent" : "Trix"
+		},
+		"id" : 09
+	}, {
+		"geometry" : {
+			"type" : "Point",
 			"coordinates" : [4.444034, 51.195006]
 		},
 		"type" : "Feature",
 		"properties" : {
 			"popupContent" : "Den Eglantier"
 		},
-		"id" : 09
+		"id" : 10
 	}, {
 		"geometry" : {
 			"type" : "Point",
@@ -99,7 +109,7 @@ var venues = {
 		"properties" : {
 			"popupContent" : "Magasin4"
 		},
-		"id" : 10
+		"id" : 11
 	}, {
 		"geometry" : {
 			"type" : "Point",
@@ -109,7 +119,7 @@ var venues = {
 		"properties" : {
 			"popupContent" : "Les Ateliers Claus"
 		},
-		"id" : 11
+		"id" : 12
 	}, {
 		"geometry" : {
 			"type" : "Point",
@@ -119,7 +129,7 @@ var venues = {
 		"properties" : {
 			"popupContent" : "Kinky Star"
 		},
-		"id" : 12
+		"id" : 13
 	}, {
 		"geometry" : {
 			"type" : "Point",
@@ -128,16 +138,6 @@ var venues = {
 		"type" : "Feature",
 		"properties" : {
 			"popupContent" : "NEST"
-		},
-		"id" : 13
-	}, {
-		"geometry" : {
-			"type" : "Point",
-			"coordinates" : [4.448444, 51.219413]
-		},
-		"type" : "Feature",
-		"properties" : {
-			"popupContent" : "Trix"
 		},
 		"id" : 14
 	}]
