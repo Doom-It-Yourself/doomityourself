@@ -712,3 +712,42 @@ footer, footer a, footer a:visited {
 	width: 100%;
 	margin-bottom: .7em;
 }
+
+
+/* Animation Code
+---------------------------------------- */
+
+@-webkit-keyframes fire {
+  0% {
+  	-webkit-animation-timing-function: ease;
+  	-webkit-transform: rotate(0deg);
+  }
+  25% {
+  	-webkit-transform: rotate(1deg);
+  }
+  50% {
+  	-webkit-animation-timing-function: ease-in;
+  	-webkit-transform: rotate(0deg);
+  }
+  75% {
+  	-webkit-transform: rotate(-1deg);
+  }
+  100% {
+  	-webkit-animation-timing-function: ease-inout;
+  	-webkit-transform: rotate(0deg);
+  }
+}
+
+#fire {
+    -webkit-animation-name: fire;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    width: 420px;
+    height: 517px;
+    margin: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
