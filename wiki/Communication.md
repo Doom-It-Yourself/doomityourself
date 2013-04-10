@@ -23,6 +23,3 @@ Just contact me whenever if you need help or advise, i totally support other peo
 Good luck man!  
 
 Nikolaj
-
-# IZZY
-I have a proposition for you, maybe we can organise a small rock small concerts in the basement together on sundays, maybe you can also do the bar also, I have afeeling we can roll this idea together, let me know what you think about this idea, something tells me we all can have a lot of fun in the basement, also if you have other ideas we can do downstairs, we promote it together you can share it I AM OPEN FOR NEW IDEAS;GRTZ IZZY;
