@@ -521,6 +521,71 @@ footer, footer a, footer a:visited {
 	padding: 3px;
 }
 
+div.box {
+	margin: 1.5em 0;
+	padding: .65em;
+	background: #6b6b6b;
+	border: 1px solid #a4a4a4;
+}
+
+.bio-toc {
+	width: 75%;
+	margin: 0 auto;
+}
+
+.bio-toc a {
+	white-space: nowrap
+}
+
+a.headerlink {
+	visibility: hidden;
+	padding-left: .5em
+}
+
+.bio-entry {
+	width: 75%;
+	min-width: 640px;
+}
+
+.bio-entry td.bio-pic {
+	vertical-align: top;
+	padding: 0 60px;
+}
+
+.bio-entry td.bio-pic img {
+	padding: 2px;
+	background-color: #6b6b6b;
+	border: 1px solid #a4a4a4
+}
+
+.bio-entry td h3 {
+	padding-top: 13px;
+	margin-bottom: .25em;
+}
+
+.bio-entry table.bio {
+	margin-bottom: 2em
+}
+
+.bio-entry table.bio th {
+	color: #000;
+	font-weight: normal;
+	text-align: right;
+	padding-right: .5em;
+	vertical-align: top;
+	white-space: nowrap
+}
+
+.bio-entry table.bio td {
+	width: 100%;
+	padding-bottom: .25em;
+	white-space: normal
+}
+
+.bio-entry table.bio td img {
+	margin: 0;
+}
+
 /* Media queries
 ---------------------------------------- */
 
@@ -594,83 +659,6 @@ footer, footer a, footer a:visited {
 	.ribbon {
 		display: none;
 	}
-}
-
-/* MailChimp Form Embed Code
----------------------------------------- */
-
-#mc_embed_signup input {
-	border: .063em solid #999;
-}
-#mc_embed_signup input:focus {
-	border-color: #333;
-}
-#mc_embed_signup .button {
-	background-color: #aaa;
-	border: 0 none;
-	color: #fff;
-}
-#mc_embed_signup .button:hover {
-	background-color: #777;
-}
-#mc_embed_signup .nowrap {
-	white-space: nowrap;
-}     
-#mc_embed_signup .clear {
-	clear: none;
-	display: inline;
-}
-#mc_embed_signup input.email {
-	text-indent: .313em;
-	width: 58%;
-	min-width: 8.125em;
-}
-#mc_embed_signup input.button {
-	display: block;
-	width: 35%;
-	min-width: 5.625em;
-}
-
-#mc_embed_signup div#mce-responses {
-	float: left;
-	top: -1.4em;
-	padding: 0em .5em 0em .5em;
-	overflow: hidden;
-	width: 90%;
-	margin: 0 5%;
-	clear: both;
-}
-#mc_embed_signup div.response {
-	margin: 1em 0;
-	padding: 1em .5em .5em 0;
-	font-weight: bold;
-	float: left;
-	top: -1.5em;
-	z-index: 1;
-	width: 80%;
-}
-#mc_embed_signup #mce-error-response {
-	display: none;
-}
-#mc_embed_signup #mce-success-response {
-	color: #529214;
-	display: none;
-}
-#mc_embed_signup label {
-	display: block;
-	margin-left: -.5em;
-}
-#mc_embed_signup label.error {
-	display: block;
-	float: none;
-	width: auto;
-	margin-left: 1.05em;
-	text-align: left;
-	padding: .5em 0;
-}
-#mc_embed_signup {
-	width: 21.875em;
-	margin-left: .5em;
 }
 
 /* GitHub ribbon Code
