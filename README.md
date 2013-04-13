@@ -23,11 +23,13 @@ FILES
 
 - **contact.html**: The HTML(5) page with all contact information
 
-- **portal.html**: The HTML(5) page with a website directory
-
 - **favicon.ico**: The favicons (bookmark icons)
 
 - **keyword.lst**: A list with keywords to use in text
+
+- **portal/** *(folder)*: The folder with a website directory
+
+- **wiki/** *(folder)*: The folder for a wiki
 
 - **assets/** *(folder)*: The folder that includes all the assets
 
