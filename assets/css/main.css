@@ -568,8 +568,7 @@ a.headerlink {
 }
 
 .bio-entry table.bio th {
-	color: #222;
-	font-weight: normal;
+	font-weight: bold;
 	text-align: right;
 	padding-right: .5em;
 	vertical-align: top;
