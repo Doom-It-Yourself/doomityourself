@@ -536,6 +536,14 @@ div.box h3 {
 	margin: 0;
 }
 
+p.drop:first-letter {
+	font-size: 1.3em;
+	font-weight: bold;
+	line-height: 0.8;
+	float: left;
+	margin: 3px 6px 0 0; 
+}
+
 .bio-toc {
 	width: 75%;
 	margin: 0 auto;
