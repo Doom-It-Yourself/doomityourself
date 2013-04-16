@@ -409,32 +409,6 @@ sub {
 /* Primary styles
 ---------------------------------------- */
 
-.framed {
-	text-align: center;
-	margin: auto;
-}
-
-.enter {
-	margin: auto;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-}
-
-.getdown {
-	min-height: 100%;
-	position: relative;
-}
-
-.square {
-	padding: .625em;
-	padding-bottom: 1.688em;
-	background: #6b6b6b;
-	min-height: 666px; /* evil getdown hack */
-}
-
 header {
 	background: #ddd;
 	color: #373737;
@@ -467,12 +441,7 @@ nav p img {
 	margin: 0 -2.5em 1.3em;
 }
 
-.float-left {
-	float: left;
-	padding: 0 2.125em;
-}
-
-div .small {
+div.small {
 	margin: 0 4.125em 0 15.188em;
 }
 
@@ -490,6 +459,37 @@ footer {
 
 footer, footer a, footer a:visited {
 	color: #6d6d6d;
+}
+
+.framed {
+	text-align: center;
+	margin: auto;
+}
+
+.enter {
+	margin: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.getdown {
+	min-height: 100%;
+	position: relative;
+}
+
+.square {
+	padding: .625em;
+	padding-bottom: 1.688em;
+	background: #6b6b6b;
+	min-height: 666px; /* evil getdown hack */
+}
+
+.float-left {
+	float: left;
+	padding: 0 2.125em;
 }
 
 .anti-social {
@@ -526,6 +526,14 @@ div.box {
 	padding: .65em;
 	background: #6b6b6b;
 	border: 1px solid #222;
+}
+
+div.box div.sidekick li {
+	list-style: none
+}
+
+div.box h3 {
+	margin: 0;
 }
 
 .bio-toc {

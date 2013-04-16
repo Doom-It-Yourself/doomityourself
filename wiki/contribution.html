@@ -1,84 +1,175 @@
-<h1>Developer Guidelines</h1>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>Doom It Yourself - Developer Guidelines</title>
+		<meta name="description" content="Doom-It-Yourself is a platform for anti-commercial culture" />
+		<meta name="author" content="WisdomLost" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		<link rel="stylesheet" href="../assets/css/main.css?version=1" />
+		<!-- JavaScript -->
+		<!--[if IE]><![endif]-->
+		<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<script src="assets/js/respond.min.js"></script>
+	</head>
+	<body class="">
+		<div class="getdown">
+			<div class="box">
+				<h2><a href="index.html" target="_self">Wiki</a> : Developer Guidelines</h2>
+				<h1>Developer Guidelines</h1>
 
-<p>(Please talk to people on the mailing list before you change this page)</p>
+				<p>
+					(Please talk to people on the mailing list before you change this page)
+				</p>
 
-<h2>Get in touch</h2>
+				<h2>Get in touch</h2>
 
-<p>Join the mailinglist and make some noise on our freenode irc channel #doom-it-dev!</p>
+				<p>
+					Join the mailinglist and make some noise on our freenode irc channel #doom-it-dev!
+				</p>
 
-<h2>Important note for pull requests</h2>
+				<h2>Important note for pull requests</h2>
 
-<p><strong>Pull requests should issued against the develop branch</strong>.  We never pull directly into master.</p>
+				<p>
+					<strong>Pull requests should issued against the develop branch</strong>.  We never pull directly into master.
+				</p>
 
-<p><strong>Our goal is to iterate in small steps. Release often, release early. Evolution instead of a revolution</strong></p>
+				<p>
+					<strong>Our goal is to iterate in small steps. Release often, release early. Evolution instead of a revolution</strong>
+				</p>
 
-<h2>General goals</h2>
+				<h2>General goals</h2>
 
-<p>To make sure everybody is going in the same direction:
-* easy to use for people
-* using less resources
-* extensible, as much functionality should be extendable with plugins so changes don't have to be done in core
-Also, keep it maintainable. We don't wanna end with a monster!</p>
+				<p>
+					To make sure everybody is going in the same direction:
+					* easy to use for people
+					* using less resources
+					* extensible, as much functionality should be extendable with plugins so changes don't have to be done in core
+					Also, keep it maintainable. We don't wanna end with a monster!
+				</p>
 
-<h2>How to work with git?</h2>
+				<h2>How to work with git?</h2>
 
-<ul>
-<li>Don't work in your master branch.</li>
-<li>Make a new branch for every feature you're working on. (This ensures that you can work you can do lots of small, independent pull requests instead of one big one with complete different features)</li>
-<li>Don't use the online edit function of github (this only creates ugly and not working commits!)</li>
-<li>Try to make clean commits that are easy readable (including descriptive commit messages!)</li>
-<li>Test before you push. Sounds easy, it isn't!</li>
-<li>Make small pull requests that are easy to review but make sure they do add value by themselves / individually</li>
-</ul>
+				<ul>
+					<li>
+						Don't work in your master branch.
+					</li>
+					<li>
+						Make a new branch for every feature you're working on. (This ensures that you can work you can do lots of small, independent pull requests instead of one big one with complete different features)
+					</li>
+					<li>
+						Don't use the online edit function of github (this only creates ugly and not working commits!)
+					</li>
+					<li>
+						Try to make clean commits that are easy readable (including descriptive commit messages!)
+					</li>
+					<li>
+						Test before you push. Sounds easy, it isn't!
+					</li>
+					<li>
+						Make small pull requests that are easy to review but make sure they do add value by themselves / individually
+					</li>
+				</ul>
 
-<h2>Coding style</h2>
+				<h2>Coding style</h2>
 
-<ul>
-<li>Do write comments. (You don't have to comment every line, but if you come up with something thats a bit complex/weird, just leave a comment. Bear in mind that you will probably leave the project at some point and that other people will read your code. Undocumented huge amounts of code are worthless!)</li>
-<li>Never ever use tabs</li>
-<li>Indentation: JS/CSS: 2 spaces; HTML: 4 spaces</li>
-<li>Don't overengineer. Don't try to solve any possible problem in one step, but try to solve problems as easy as possible and improve the solution over time!</li>
-<li>Do generalize sooner or later! (if an old solution, quickly hacked together, poses more problems than it solves today, refactor it!)</li>
-<li>If you do make changes, document them! (see below)</li>
-</ul>
+				<ul>
+					<li>
+						Do write comments. (You don't have to comment every line, but if you come up with something thats a bit complex/weird, just leave a comment. Bear in mind that you will probably leave the project at some point and that other people will read your code. Undocumented huge amounts of code are worthless!)
+					</li>
+					<li>
+						Never ever use tabs
+					</li>
+					<li>
+						Indentation: JS/CSS: 2 spaces; HTML: 4 spaces
+					</li>
+					<li>
+						Don't overengineer. Don't try to solve any possible problem in one step, but try to solve problems as easy as possible and improve the solution over time!
+					</li>
+					<li>
+						Do generalize sooner or later! (if an old solution, quickly hacked together, poses more problems than it solves today, refactor it!)
+					</li>
+					<li>
+						If you do make changes, document them! (see below)
+					</li>
+				</ul>
 
-<h2>Branching model / git workflow</h2>
+				<h2>Branching model / git workflow</h2>
 
-<p>see git flow http://nvie.com/posts/a-successful-git-branching-model/</p>
+				<p>
+					see git flow http://nvie.com/posts/a-successful-git-branching-model/
+				</p>
 
-<h3><code>master</code> branch</h3>
+				<h3><code>
+					master</code> branch</h3>
 
-<ul>
-<li>the stable</li>
-<li>This is the branch everyone should use for production stuff</li>
-</ul>
+				<ul>
+					<li>
+						the stable
+					</li>
+					<li>
+						This is the branch everyone should use for production stuff
+					</li>
+				</ul>
 
-<h3><code>develop</code>branch</h3>
+				<h3><code>
+					develop</code>branch</h3>
 
-<ul>
-<li>everything that is READY to go into master at some point in time</li>
-<li>This stuff is tested and ready to go out</li>
-</ul>
+				<ul>
+					<li>
+						everything that is READY to go into master at some point in time
+					</li>
+					<li>
+						This stuff is tested and ready to go out
+					</li>
+				</ul>
 
-<h3>release branches</h3>
+				<h3>release branches</h3>
 
-<ul>
-<li>stuff that should go into master very soon</li>
-<li>only bugfixes go into these (see http://nvie.com/posts/a-successful-git-branching-model/ for why)</li>
-<li>we should not be blocking new features to develop, just because we feel that we should be releasing it to master soon. This is the situation that release branches solve/handle.</li>
-</ul>
+				<ul>
+					<li>
+						stuff that should go into master very soon
+					</li>
+					<li>
+						only bugfixes go into these (see http://nvie.com/posts/a-successful-git-branching-model/ for why)
+					</li>
+					<li>
+						we should not be blocking new features to develop, just because we feel that we should be releasing it to master soon. This is the situation that release branches solve/handle.
+					</li>
+				</ul>
 
-<h3>hotfix branches</h3>
+				<h3>hotfix branches</h3>
 
-<ul>
-<li>fixes for bugs in master</li>
-</ul>
+				<ul>
+					<li>
+						fixes for bugs in master
+					</li>
+				</ul>
 
-<h3>feature branches (in your own repos)</h3>
+				<h3>feature branches (in your own repos)</h3>
 
-<ul>
-<li>these are the branches where you develop your features in</li>
-<li>If its ready to go out, it will be merged into develop</li>
-</ul>
+				<ul>
+					<li>
+						these are the branches where you develop your features in
+					</li>
+					<li>
+						If its ready to go out, it will be merged into develop
+					</li>
+				</ul>
 
-<p>Over the time we pull features from feature branches into the develop branch. Every month we pull from develop into master. Bugs in master get fixed in hotfix branches. These branches will get merged into master AND develop. There should never be commits in master that aren't in develop</p>
+				<p>
+					Over the time we pull features from feature branches into the develop branch. Every month we pull from develop into master. Bugs in master get fixed in hotfix branches. These branches will get merged into master AND develop. There should never be commits in master that aren't in develop
+				</p>
+			</div>
+
+			<footer>
+				<p>
+					unless otherwise noted, &#390;&#8413;  copyleft  by <a href="mailto:admin@doomityourself.org?subject=feedback">doom-it-yourself</a> | released under the <a href="http://sam.zoy.org/wtfpl/COPYING" target="_blank">Do What The Fuck You Want To Public License</a>
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>
