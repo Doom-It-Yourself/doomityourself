@@ -515,7 +515,7 @@ footer, footer a, footer a:visited {
 
 .article_img {
 	float: left;
-	border: solid 1px #ddd;
+	border: solid 1px #222;
 	margin: 6px 20px 12px 0;
 	background: #eee;
 	padding: 3px;
@@ -555,7 +555,7 @@ a.headerlink {
 .bio-entry td.bio-pic img {
 	padding: 2px;
 	background-color: #6b6b6b;
-	border: 1px solid #222
+	border: 1px solid #a4a4a4
 }
 
 .bio-entry td h3 {
